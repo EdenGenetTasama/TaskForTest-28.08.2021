@@ -1,0 +1,66 @@
+/* #divOne{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+#divTwo{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+
+#divThree{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+}
+
+#divFour{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+#divFive{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+
+#divSix{
+    background-color: peru;
+    width: 200px;
+    height: 200px;
+}
+
+#divSeven{
+    background-color: rgb(116, 76, 102);
+    width: 200px;
+    height: 200px;
+}
+#divEithe{
+    background-color: rgb(158, 111, 56);
+    width: 200px;
+    height: 200px;
+}
+
+#divNine{
+    background-color: rgb(11, 224, 240);
+    width: 200px;
+    height: 200px;
+}
+
+#divTen{
+    background-color: rgb(28, 158, 93);
+    width: 200px;
+    height: 200px;
+} */
+
+#divBoxButton{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    position: absolute;
+    
+}
