@@ -105,28 +105,44 @@
 
 // חוסר הצלחה
 
-// var randomNum = Math.floor(Math.random() * 1000);
+var randomNum = Math.floor(Math.random() * 1000);
 
-// function moveBoxRandom() {
-//   setInterval(() => {
-//     divBoxButton.style.margin = `${randomNum}px`;
+var movingFunction =setInterval(() => {
+    divBoxButton.style.top = `${randomNum}px`;
+    divBoxButton.style.left = `${randomNum}px`;
+    divBoxButton.style.bottom = `${randomNum}px`;
+    divBoxButton.style.right = `${randomNum}px`;
+  }, 2000);
 
-// },1000)};
-          
 
-// moveBoxRandom();
+moveBoxRandom();
+
+buttonOfId.addEventListener("click" , ()=>{
+    clearInterval(movingFunction)
+})
+
 // ======================================
 
 // צור מערך של מדינות המכילות: שם ודגל(קישור של תמונה) וצור משתנה של COUNTER מאופס והצג אותו על אלמנט P.
 
-
 // const countries = [
-//     {nameOfCountry: Israel , flag: "https://www.partyinabox.co.il/media/catalog/product/cache/1/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/s/m/small-israeli-flag.jpg"},
-//     {nameOfCountry: Ethiopia, flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/langhe-250px-Flag_of_Ethiopia.svg.png" },
-//     {nameOfCountry: Holland, flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/800px-Flag_of_the_Netherlands.svg.png"},
-//     {nameOfCountry: Ghana , flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/255px-Flag_of_Ghana.svg.png" },
-//     {nameOfCountry: Greece, flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/2560px-Flag_of_Greece.svg.png" },
-//     {nameOfCountry: France , flag: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" },
-//     {nameOfCountry: Mexico , flag: },
+//     {nameOfCountry: "Israel" , flag: "https://www.partyinabox.co.il/media/catalog/product/cache/1/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/s/m/small-israeli-flag.jpg"},
+//     {nameOfCountry: "Ethiopia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/langhe-250px-Flag_of_Ethiopia.svg.png" },
+//     {nameOfCountry: "Holland", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/800px-Flag_of_the_Netherlands.svg.png"},
+//     {nameOfCountry: "Ghana" , flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/255px-Flag_of_Ghana.svg.png" },
+//     {nameOfCountry: "Greece", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/2560px-Flag_of_Greece.svg.png" },
+//     {nameOfCountry: "France" , flag: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" },
+//     {nameOfCountry: "Mexico" , flag:"https://cdn.britannica.com/73/2573-004-29818847/Flag-Mexico.jpg" },
 
 // ]
+// הצג את דגלי כל המדינות על המסך מחדש כל 3 שניות
+// var counter = 0;
+// לא נראה לעין הציור מחדש.
+
+// setInterval(() => {
+//     function runningCountries(){
+//     for (let i = 0; i < countries.length; i++) {
+//         presentCountry = `${countries.flag}`
+//     }
+// }
+// }, 3000);
